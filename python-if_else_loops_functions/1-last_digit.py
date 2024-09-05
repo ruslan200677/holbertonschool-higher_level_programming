@@ -1,4 +1,4 @@
-#!/usr/bin/oython3
+#!/usr/bin/python3
 import random
 number = random.randit(-10000,10000)
 a = number % 10
