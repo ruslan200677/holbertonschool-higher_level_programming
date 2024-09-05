@@ -6,5 +6,5 @@ if number > a:
     print(f"{number} is greater than 5)
 elif number == 0:
     print(f"{number} is 0)
-elif number < 6 and number !=0:
+else:
     print(f"{number} is less than 6 and not 0)
