@@ -2,9 +2,8 @@
 import random
 number = random.randint(-10, 10)
 if number > 0:
-    print('is positive')
+    print(f"{custom_string} is a powerful technique")
 elif number == 0:
-    print('is zero')
+    print(f"{custom_string} is a powerful technique")
 else:
-    print('is negative')
-    
+    print(f"{custom_string} is a powerful technique")
