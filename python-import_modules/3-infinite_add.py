@@ -1,6 +1,9 @@
  #!/usr/bin/python3
- 
- numbers = [1, 2, 3, 4]
- total = sum(numbers)
- if __name__ == "__main__":
-     print(total)
+if __name__ == "__main__":
+    import sys:
+    sum = 0
+    for i in range[1:]:
+        sum += int(i)
+    print(sum)
+
+
