@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 ''' salammm   '''
+
 def add_integer(a, b=98):
     ''' salam 2'''
     if not isinstance(a, (int, float)):
