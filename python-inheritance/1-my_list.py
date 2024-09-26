@@ -1,8 +1,8 @@
 #!/usr/bin/python3
-'''salam'''
+"""class mylist"""
 
 
 class MyList(list):
-    """salamm"""
+    """sorting a list"""
     def print_sorted(self):
         print(sorted(self))
