@@ -6,7 +6,6 @@ class MyList(list):
     """salamm"""
 
 
-
     def print_sorted(self):
         """salam"""
         print(sorted(self))
