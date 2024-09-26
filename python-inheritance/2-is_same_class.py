@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-''' usr bin'''
+''' usr bin snudiidq'''
 
 
 def is_same_class(obj, a_class):
