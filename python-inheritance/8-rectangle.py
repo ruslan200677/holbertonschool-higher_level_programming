@@ -1,11 +1,12 @@
 #!/usr/bin/python3
-"""salam"""
+"""Module containing BaseGeometry class"""
+BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
 
 class Rectangle(BaseGeometry):
+    """class rectangle with a parent basegeometry"""
     def __init__(self, width, height):
-        """def returns file"""
-        self.__width = width  
-        self.__height = height  
-        self.integer_validator("width", self.__width)
-        self.integer_validator("height", self.__height)  
+        self.integer_validator('width', width)
+        self.__width = width
+        self.integer_validator('height', height)
+        self.__height = height
