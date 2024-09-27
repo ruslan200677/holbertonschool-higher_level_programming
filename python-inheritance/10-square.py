@@ -3,7 +3,6 @@
 Rectangle = __import__(9-rectangle.py).Rectangle
 
 
-
 class Square(Rectangle):
     """class square with a parent rectangle"""
     def __init__(self, width, height):
