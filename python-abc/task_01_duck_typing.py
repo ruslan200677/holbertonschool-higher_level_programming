@@ -1,6 +1,15 @@
 #!/usr/bin/python
-from abc import ABC
+from abc import ABC, abstractmethod
+from math import pi
 
+class Shape(ABC):
+    @abstractmethod
+    def area(self):
+        pass
+
+    @abstractmethod
+    def perimeter(self):
+        pass
 
 class Circle(Shape):
     def __init__(self, radius):
