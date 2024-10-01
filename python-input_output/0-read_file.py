@@ -1,9 +1,9 @@
 #!/usr/bin/python3
-""" usr bin pyth"""
+"""Module usr"""
 
 
 def read_file(filename=""):
-    """def read"""
-    with open(filename="", "r", encoding='utf-8') as a file:
+    """function read"""
+    with open(filename, "r", encoding="utf-8") as file:
         content = file.read()
-        print(contect, end="")
+        print(content, end="")
