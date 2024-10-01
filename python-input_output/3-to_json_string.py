@@ -3,6 +3,6 @@
 
 
 def to_json_string(my_obj):
-    """slamammm 222"""
+    """def to json to string and return a jsondumbs"""
     import json
     return json.dumbs(my_obj)
