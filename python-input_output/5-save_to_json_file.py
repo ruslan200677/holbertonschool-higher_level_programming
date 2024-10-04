@@ -1,8 +1,12 @@
 #!/usr/bin/python3
-"""def usr bin"""
+"""module"""
+
+
+import json
 
 
 def save_to_json_file(my_obj, filename):
-    """function returns jsonnn"""
-    with open(filename, "w", encoding= "utf=18" )  as file:
+    """func00"""
+
+    with open(filename, 'w') as file:
         json.dump(my_obj, file)
