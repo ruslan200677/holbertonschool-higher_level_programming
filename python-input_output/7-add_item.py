@@ -1,12 +1,9 @@
 #!/usr/bin/python3
-"""function"""
-
+""" Module"""
+import json
 
 
 def save_to_json_file(my_obj, filename):
-    """JSON """
-def load_from_json_file(filename):
-    """sa,sla"""
-    import json
-    with open(filename, "w") as file:
+    """ Functio"""
+    with open(filename, 'w', encoding="utf-8") as f:
         json.dump(my_obj, f)
