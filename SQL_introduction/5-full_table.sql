@@ -1,2 +1,2 @@
 -- create database
-create show table first_table;
+CREATE SHOW TABLE first_table;
