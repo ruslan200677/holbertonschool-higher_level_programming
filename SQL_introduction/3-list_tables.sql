@@ -1,2 +1,2 @@
 -- create database
-SHOW DATABASE;
+SHOW TABLES;
