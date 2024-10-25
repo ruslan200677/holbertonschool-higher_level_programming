@@ -1,5 +1,5 @@
--- task
+-- create
 CREATE TABLE IF NOT EXISTS force_name (
-    ID INT,
+    id INT,
     name VARCHAR(256) NOT NULL
 );
