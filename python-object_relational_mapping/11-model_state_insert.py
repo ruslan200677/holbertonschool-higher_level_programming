@@ -1,8 +1,11 @@
 #!/usr/bin/python3
-"""Add a new state"""
+"""
+Module
+"""
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from sys import argv
+
 from model_state import Base, State
 
 if __name__ == "__main__":
@@ -15,9 +18,10 @@ if __name__ == "__main__":
     Session = sessionmaker(bind=engine)
     session = Session()
 
-    state = State(name='Louisiana')
-    session.add(state)
+    s = State(name='Louisiana')
+    session.add(s)
     session.commit()
-    print(state.id)
+    print(s.id)
 
-    session.close()
+    if session:
+        session.close()
