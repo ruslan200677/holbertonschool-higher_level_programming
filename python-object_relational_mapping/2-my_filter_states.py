@@ -24,4 +24,4 @@ if __name__ == '__main__':
     if cursor:
         cursor.close()
     if db:
-        db.close()
+        db.close(
