@@ -1,10 +1,12 @@
 #!/usr/bin/python3
-"""Delete states"""
+"""
+Module
+"""
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from sys import argv
-from model_state import Base, State
 
+from model_state import Base, State
 
 if __name__ == "__main__":
 
@@ -12,6 +14,7 @@ if __name__ == "__main__":
                            .format(argv[1], argv[2], argv[3]))
 
     Base.metadata.create_all(engine)
+
     Session = sessionmaker(bind=engine)
     session = Session()
 
@@ -19,4 +22,5 @@ if __name__ == "__main__":
         session.delete(state)
     session.commit()
 
-    session.close()
+    if session:
+        session.close()
