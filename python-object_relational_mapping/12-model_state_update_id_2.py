@@ -1,11 +1,8 @@
 #!/usr/bin/python3
-"""
-Module
-"""
+"""Update a state"""
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from sys import argv
-
 from model_state import Base, State
 
 if __name__ == "__main__":
@@ -21,5 +18,4 @@ if __name__ == "__main__":
     session.query(State).filter(State.id == 2).update({"name": "New Mexico"})
     session.commit()
 
-    if session:
-        session.close()
+    session.close()
