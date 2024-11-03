@@ -1,29 +1,27 @@
 #!/usr/bin/python3
-"""Filter states by user input"""
+"""Module"""
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     from sys import argv
     import MySQLdb
 
     db = MySQLdb.connect(
-        host="localhost",
-        port=3306,
         user=argv[1],
-        passwd=argv[2],
-        db=argv[3]
+        password=argv[2],
+        database=argv[3]
     )
+
     cursor = db.cursor()
 
-    try:
-        query = """SELECT * FROM states WHERE name='{:s}' ORDER BY states.id"""
-        cursor.execute(query.format(argv[4]))
-        rows = cursor.fetchall()
-    except MySQLdb.Error as e:
-        print(e)
+    cursor.execute("SELECT * \
+                    FROM `states` \
+                    WHERE BINARY `name` = '{}' \
+                    ORDER BY id".format(argv[4]))
 
-    for row in rows:
-        if row[1] == argv[4]:
-            print(row)
+    for state in cursor.fetchall():
+        print(state)
 
-    cursor.close()
-    db.close()
+    if cursor:
+        cursor.close()
+    if db:
+        db.close()
